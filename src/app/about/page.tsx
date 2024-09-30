@@ -13,7 +13,7 @@ const Contacts = () => {
                 Front<span className="text-purple-600">end</span> Developer
                 </h1>
                 <div className="mt-12 mb-16">
-                <div className="relative w-96 h-96 rounded-full border-4 border-purple-600">
+                <div className="relative w-96 h-96 rounded-full border-3 border-purple-600">
                 <Image
                     src={profile}
                     alt="Profile Picture"
