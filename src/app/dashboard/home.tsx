@@ -26,6 +26,7 @@ const Home = () => {
                     </a>  
                 </button>
                     <Link href='/projects'>
+                        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
                         <button className="border border-gray-400 text-black px-6 py-3 rounded-lg shadow hover:border-purple-600">Browse Projects</button>
                     </Link>
                 </div>

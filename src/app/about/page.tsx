@@ -5,13 +5,23 @@ import profile from '../assets/profile.jpg';
 
 const Contacts = () => {
   return (
-    <div className="min-h-screen">
-        <div className='flex justify-center'>
+    <div className="min-h-screen px-4">
+        <div className='flex flex-col md:flex-row justify-center items-center mt-20'>
             <div className="text-center flex-col mt-20">
                 <h2 className="text-lg text-gray-600">Hey, I&apos;m Koketso 👋</h2>
                 <h1 className="text-5xl font-bold text-black">
                 Front<span className="text-purple-600">end</span> Developer
                 </h1>
+                <div className="mt-12 mb-16">
+                <div className="relative w-96 h-96 rounded-full border-4 border-purple-600">
+                <Image
+                    src={profile}
+                    alt="Profile Picture"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-full"
+                />
+                </div>
                 <p className="mt-4 text-lg text-gray-500 max-w-xl">
                 I&apos;m a frontend developer based in Johannesburg. I&apos;ll help you design and build beautiful websites your users will love.
                 As a passionate front-end developer, I specialize in creating intuitive, 
@@ -33,19 +43,8 @@ const Contacts = () => {
                     Get In Touch
                 </a>                    
                 </button>
-                </div>
             </div>
-
-            <div className="mt-12 mb-16">
-                <div className="relative w-96 h-96 rounded-full border-4 border-purple-600">
-                <Image
-                    src={profile}
-                    alt="Profile Picture"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
-                />
-                </div>
+            </div>
             </div>
         </div>
     </div>
